@@ -8,7 +8,7 @@
     <script src="bg_script.js"></script>
 </head>
 <body>
-    <div><h1>1. Hello World</h1> </div><br>
+    <div><h1>1. Hello World</h1><br>
         <i> This code takes a name as input and prints Hello followed by the name</i><br>
         <form> 
             <label> Please enter your name </label> 
@@ -20,7 +20,36 @@
         </form>
     </div><hr>
 
+    <div> <h1> 2. Arithmatic Calcualations </h1> 
+        <i> This code shows the basic arithmatic operations on two input numbers </i>
+        <form>
+            <label> Enter two numbers </label>
+            <input type="number" id="tb_2_num1"> <input type="number" id="tb_2_num2"> <br>
 
+            <label> Choose an operation </label>
+            <input name="rb_2_choice"  type="radio" value="add"> Add </input>   
+            <input name="rb_2_choice"  type="radio" value="sub"> Sub </input>
+            <input name="rb_2_choice"  type="radio" value="mul"> Mul </input>
+            <input name="rb_2_choice"  type="radio" value="div"> Div </input> 
+            <input name="rb_2_choice"  type="radio" value="mod"> Mod </input>
+            <input name="rb_2_choice"  type="radio" value="exp"> Exp </input>        
+        </form> <br>
+
+        <input type="button" id="btn_2_calc" value="Calculate" onclick="calculator()"/> 
+
+        <label id="lab_2_result"> </label>
+    </div><hr>
+
+    <div><h1> 3. String Handling </h1> <br>
+
+        <form>
+            <label>Enter a string with formatting : </label> 
+            <input type="text" id="tb_3_str"/>
+            <input type="button" id="btn_3_enter" value="Enter" onclick="stringHandling()"> <br>
+            <label id="lab_3_result"></label> 
+        </form>
+
+    </div><hr>
 
 </body>
 </html>

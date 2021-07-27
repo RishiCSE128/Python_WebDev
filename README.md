@@ -15,7 +15,7 @@ In practice JS runs mostly as a backend of an web application, therefore in this
 JS defines 7 diffrent data types. 
  | Type | Meaning  | 
  |--- | --- |
- | Undefined | no defined |
+ | Undefined | declared but not assigned |
  | null | Set as nothing | 
  | boolean | True / False | 
  | string | any text | 
@@ -27,3 +27,24 @@ JS defines 7 diffrent data types.
  1. __var__ : `var NAME = VLAUE`, globally scoped 
  2. __let__ : `let NAME = VALUE`, locally scoped
  3. __cosnt__ : `const  NAME = VALUE`, fixed value  
+
+ e.g. `var x = 20;` 
+
+ ### Arihmatic Operators
+
+ JS supports arithmatic operators such as any programming lanuagges. 
+
+ |operators | operation | 
+ |---|---| 
+ |+| addition |
+ |-| subtration |
+ |*| multiplication |
+ |/| division|
+ |%| Modulus | 
+ |**| Exponent |
+ |++| Increment |
+ |--| Decrement |
+ |+=| increment and assign |
+ |-=| increment and assign |
+ |-=| increment and assign |
+ |/=| increment and assign |
