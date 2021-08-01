@@ -32,3 +32,40 @@ function stringHandling(){
     var x = String.raw`${str}`;
     console.log(x);
 } 
+
+var item_list = [];
+function array(choice){  // passing value from the HTML
+    console.log(choice)
+    var item = document.getElementById("tb_4_input").value;
+    var result = document.getElementById("ol_4_result");
+
+   if(item != ""){
+
+       switch(choice){
+            case "push": item_list.push(item); break;
+            case "unshift": item_list.unshift(item); break;
+            case "pop": x = item_list.pop(); 
+                       alert(x + "is removed");
+                       break;
+            case "shift": x = item_list.shift(); 
+                          alert(x + "is removed");
+                          break;
+            case "splice_name" : idx = item_list.indexOf(item);
+                                 item_list.splice(idx);
+                                 break; 
+            case "splice": item_list.splice(parseInt(item)-1);
+                           break;
+
+       }
+    } 
+
+
+    else alert("Envalid entry... ")
+        
+   temp="";
+   item_list.forEach(elem => {
+        console.log(elem);
+        temp+="<li>"+elem+"</li>";
+   });
+   result.innerHTML=temp;
+}
